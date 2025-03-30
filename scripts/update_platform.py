@@ -20,5 +20,7 @@ def update_open_data_volume(entry_id, count):
     entry.open_data_volume = str(count) #field is a string
     # save the entry 
     entry.save()
+    # publish entry 
+    entry.publish()
 
-update_open_data_volume('XXXXX', 118)
+# update_open_data_volume('6jH9t5XT78xKj1A8xalHNS', 0)
