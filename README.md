@@ -1,5 +1,5 @@
 
-Using the Contentful Management API to update GLAME-LAB data platforms
+Using the Contentful Management API to update GLAM-E-LAB data platforms
 
 https://www.contentful.com/developers/docs/references/content-management-api
 
