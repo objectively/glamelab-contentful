@@ -1,5 +1,6 @@
 certifi==2025.1.31
 charset-normalizer==3.4.1
+contentful==2.4.0
 contentful_management==2.14.4
 idna==3.10
 python-dateutil==2.9.0.post0
