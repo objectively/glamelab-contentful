@@ -1,17 +1,6 @@
-# https://www.contentful.com/developers/docs/references/content-management-api/
 
-import os
-from dotenv import load_dotenv #python-dotenv
-import contentful_management
+from contentful_cma_client import client, SPACE_ID, CONTENTFUL_ENV
 
-load_dotenv("./.env")
-
-MANAGEMENT_API_TOKEN = os.getenv("GLAMELAB_MANAGEMENT_TOKEN")
-CONTENTFUL_ENV = os.getenv("CONTENTFUL_ENV") #'api-test' or 'master'
-SPACE_ID = os.getenv("SPACE_ID")
-
-# create contentful client 
-client = contentful_management.Client(MANAGEMENT_API_TOKEN)
 
 def update_open_data_volume(entry_id, count):
     # get entry 
@@ -23,4 +12,4 @@ def update_open_data_volume(entry_id, count):
     # publish entry 
     # entry.publish()
 
-# update_open_data_volume('6jH9t5XT78xKj1A8xalHNS', 0)
+# update_open_data_volume('6jH9t5XT78xKj1A8xalHNS', 2000000000)
